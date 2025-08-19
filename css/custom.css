@@ -1,0 +1,12 @@
+/* Custom presentation styling */
+.reveal h1, .reveal h2, .reveal h3 {
+  color: #00bcd4;
+}
+
+.reveal section {
+  font-size: 1.1em;
+}
+
+canvas {
+  margin-top: 20px;
+}

@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Quarterly Earnings Report</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Reveal.js -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/black.css" id="theme">
+
+  <!-- Syntax highlighting -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/plugin/highlight/monokai.css">
+
+  <!-- MathJax -->
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/math/math.js"></script>
+</head>
+<body>
+
+<div class="reveal">
+  <div class="slides">
+
+    <!-- Title Slide -->
+    <section>
+      <h1>Quarterly Earnings Report</h1>
+      <h3>Financial Institution</h3>
+      <p>Email: <a href="mailto:21f3000697@ds.study.iitm.ac.in">21f3000697@ds.study.iitm.ac.in</a></p>
+      <aside class="notes">
+        Welcome stakeholders. Introduce the agenda and confirm they have access to the digital report.
+      </aside>
+    </section>
+
+    <!-- Markdown Slide -->
+    <section data-markdown>
+      <textarea data-template>
+# Key Highlights (Markdown Slide)
+
+- Revenue Growth: **12% YoY**
+- Net Profit: **₹ 250 Cr**
+- Market Share: *5% increase*
+- Operational Efficiency Improved
+      </textarea>
+      <aside class="notes">
+        Present key highlights at a glance. This slide is written in Markdown for easy updates.
+      </aside>
+    </section>
+
+    <!-- Animated fragments -->
+    <section>
+      <h2>Revenue Breakdown</h2>
+      <ul>
+        <li class="fragment">Retail Banking: ₹ 120 Cr</li>
+        <li class="fragment">Corporate Banking: ₹ 90 Cr</li>
+        <li class="fragment">Wealth Management: ₹ 40 Cr</li>
+      </ul>
+      <aside class="notes">
+        Reveal each revenue segment gradually to maintain engagement.
+      </aside>
+    </section>
+
+    <!-- Code Sample with Syntax Highlighting -->
+    <section>
+      <h2>Sample Data Processing Code</h2>
+      <pre><code class="python">
+import pandas as pd
+
+# Load earnings data
+df = pd.read_csv("earnings.csv")
+
+# Calculate YoY growth
+df["YoY_Growth"] = (df["Q2_2025"] - df["Q2_2024"]) / df["Q2_2024"] * 100
+
+print(df.head())
+      </code></pre>
+      <aside class="notes">
+        Demonstrate how we process raw earnings data programmatically.
+      </aside>
+    </section>
+
+    <!-- Mathematical Equation -->
+    <section>
+      <h2>Financial Formula</h2>
+      <p>
+        The Net Present Value (NPV) is given by:
+      </p>
+      <p>
+        \[
+          NPV = \sum_{t=1}^{n} \frac{C_t}{(1 + r)^t}
+        \]
+      </p>
+      <aside class="notes">
+        Explain how NPV helps stakeholders evaluate long-term project profitability.
+      </aside>
+    </section>
+
+    <!-- Closing -->
+    <section>
+      <h2>Thank You</h2>
+      <p>Questions & Discussion</p>
+      <aside class="notes">
+        Invite stakeholders to share their questions and feedback.
+      </aside>
+    </section>
+
+  </div>
+</div>
+
+<!-- Reveal.js scripts -->
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/markdown.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/highlight/highlight.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/notes/notes.js"></script>
+
+<script>
+  Reveal.initialize({
+    hash: true,
+    plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath ]
+  });
+</script>
+
+</body>
+</html>
